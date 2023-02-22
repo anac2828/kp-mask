@@ -1,7 +1,6 @@
-const resetButton = document.querySelector(".reset-animation");
-const maskedImage = document.querySelector(".color-image");
+const animationBtn = document.querySelector(".reset-animation");
+const maskContainer = document.querySelector(".color-image");
 
-resetButton.addEventListener("click", () => {
-  maskedImage.classList.remove("mask-animation");
-  setTimeout(() => maskedImage.classList.add("mask-animation"), 100);
+animationBtn.addEventListener("click", () => {
+  maskContainer.classList.toggle("mask-animation");
 });
